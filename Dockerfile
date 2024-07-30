@@ -3,5 +3,5 @@ RUN            mkdir /app
 WORKDIR        /app
 COPY           ./ /app
 RUN            pip3.6 install -r requirements.txt
-COPY           run.sh .
+COPY           run.sh  .
 ENTRYPOINT     ["bash", "run.sh"]
